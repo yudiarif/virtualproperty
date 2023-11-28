@@ -140,25 +140,25 @@
         </button>
         <a class="navbar-brand text-brand" href="index.html">Virtual<span class="color-b">Property</span></a>
 
-        <div class="navbar-collapse collapse justify-content-center" id="navbarDefault">
+        <div class="navbar-collapse collapse justify-content-end mx-2" id="navbarDefault">
           <ul class="navbar-nav">
             <li class="nav-item">
               <a class="nav-link" href="index.html">Home</a>
             </li>
 
-            <li class="nav-item">
+             <!-- <li class="nav-item">
               <a class="nav-link" href="about.html">About</a>
-            </li>
+            </li> -->
 
             <li class="nav-item">
               <a class="nav-link" href="property-grid.html">Property</a>
             </li>
-
+<!-- 
             <li class="nav-item">
               <a class="nav-link" href="blog-grid.html">Blog</a>
-            </li>
+            </li> -->
 
-            <li class="nav-item dropdown">
+            <!-- <li class="nav-item dropdown">
               <a class="nav-link dropdown-toggle" href="#" id="navbarDropdown" role="button" data-bs-toggle="dropdown" aria-haspopup="true" aria-expanded="false">Pages</a>
               <div class="dropdown-menu">
                 <a class="dropdown-item active" href="property-single.html">Property Single</a>
@@ -166,7 +166,7 @@
                 <a class="dropdown-item" href="agents-grid.html">Agents Grid</a>
                 <a class="dropdown-item" href="agent-single.html">Agent Single</a>
               </div>
-            </li>
+            </li> -->
             <li class="nav-item">
               <a class="nav-link" href="contact.html">Contact</a>
             </li>
@@ -213,14 +213,17 @@
       <section class="property-single nav-arrow-b">
         <div class="container">
           <div class="justify-content-center">
-            <div class="news-img-box">
-             <iframe class="vt mb-5 img-fluid" src="http://localhost/virtualproperty/vt/index.html" frameborder="0"></iframe>
-
-            </div>
-            <!-- <div class="col-lg-12">
-             <iframe class="vt mb-5 img-fluid" src="http://localhost/virtualproperty/vt/index.html" frameborder="0"></iframe>
+            <!-- <div class="news-img-box">
+             <iframe class="vt mb-5" src="http://localhost/virtualproperty/vt/index.html" frameborder="0"></iframe>
             </div> -->
+            <div class="ratio ratio-4x3 vt ">
+              <iframe class="" src="http://localhost/virtualproperty/vt/index.html"></iframe>
+            </div>
+            <div class="justify-content-center">
+              <button type="button" class="btn btn-success fullscreen-mode"><a href="http://localhost/virtualproperty/vt/index.html" target="_blank">FullScreen Virtual Tour</a></button>
+            </div>
           </div>
+            
 
           <div class="row">
             <div class="col-sm-12">
@@ -357,10 +360,10 @@
                   <a class="nav-link active" id="pills-video-tab" data-bs-toggle="pill" href="#pills-video" role="tab" aria-controls="pills-video" aria-selected="true">Video</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" id="pills-plans-tab" data-bs-toggle="pill" href="#pills-plans" role="tab" aria-controls="pills-plans" aria-selected="false">Floor Plans</a>
+                  <a class="nav-link" id="pills-plans-tab" data-bs-toggle="pill" href="#pills-plans" role="tab" aria-controls="pills-plans" aria-selected="false">Gallery Foto</a>
                 </li>
                 <li class="nav-item">
-                  <a class="nav-link" id="pills-map-tab" data-bs-toggle="pill" href="#pills-map" role="tab" aria-controls="pills-map" aria-selected="false">Ubication</a>
+                  <a class="nav-link" id="pills-map-tab" data-bs-toggle="pill" href="#pills-map" role="tab" aria-controls="pills-map" aria-selected="false">Lokasi</a>
                 </li>
               </ul>
               <div class="tab-content" id="pills-tabContent">
@@ -368,7 +371,21 @@
                   <iframe src="https://player.vimeo.com/video/73221098" width="100%" height="460" frameborder="0" webkitallowfullscreen mozallowfullscreen allowfullscreen></iframe>
                 </div>
                 <div class="tab-pane fade" id="pills-plans" role="tabpanel" aria-labelledby="pills-plans-tab">
-                  <img src="assets/img/plan2.jpg" alt="" class="img-fluid" />
+                  <div class="row justify-content-center">
+                    <div class="col-lg-8 mt-2">
+                      <div id="property-single-carousel" class="swiper">
+                        <div class="swiper-wrapper">
+                          <div class="carousel-item-b swiper-slide">
+                            <img src="assets/img/slide-1.jpg" alt="" class="img-fluid" />
+                          </div>
+                          <div class="carousel-item-b swiper-slide">
+                            <img src="assets/img/slide-2.jpg" alt="" class="img-fluid" />
+                          </div>
+                        </div>
+                      </div>
+                      <div class="property-single-carousel-pagination carousel-pagination"></div>
+                    </div>
+                  </div>
                 </div>
                 <div class="tab-pane fade" id="pills-map" role="tabpanel" aria-labelledby="pills-map-tab">
                   <iframe
@@ -392,13 +409,13 @@
     <section class="section-footer">
       <div class="container">
         <div class="row">
-          <div class="col-sm-12 col-md-4">
+          <div class="col-sm-12 col-md-8">
             <div class="widget-a">
               <div class="w-header-a">
-                <h3 class="w-title-a text-brand">EstateAgency</h3>
+                <h3 class="w-title-a text-brand">VirtualProperty</h3>
               </div>
               <div class="w-body-a">
-                <p class="w-text-a color-text-a">Enim minim veniam quis nostrud exercitation ullamco laboris nisi ut aliquip exea commodo consequat duis sed aute irure.</p>
+                <p class="w-text-a color-text-a">Perusahaan properti terkemuka, menyediakan pengalaman transaksi tanpa masalah. Tim profesional kami ahli dalam pengenalan pasar, penilaian, dan pemasaran properti canggih, memastikan kepuasan pelanggan dari awal hingga akhir.</p>
               </div>
               <div class="w-footer-a">
                 <ul class="list-unstyled">
@@ -408,42 +425,8 @@
               </div>
             </div>
           </div>
-          <div class="col-sm-12 col-md-4 section-md-t3">
-            <div class="widget-a">
-              <div class="w-header-a">
-                <h3 class="w-title-a text-brand">The Company</h3>
-              </div>
-              <div class="w-body-a">
-                <div class="w-body-a">
-                  <ul class="list-unstyled">
-                    <li class="item-list-a"><i class="bi bi-chevron-right"></i> <a href="#">Site Map</a></li>
-                    <li class="item-list-a"><i class="bi bi-chevron-right"></i> <a href="#">Legal</a></li>
-                    <li class="item-list-a"><i class="bi bi-chevron-right"></i> <a href="#">Agent Admin</a></li>
-                    <li class="item-list-a"><i class="bi bi-chevron-right"></i> <a href="#">Careers</a></li>
-                    <li class="item-list-a"><i class="bi bi-chevron-right"></i> <a href="#">Affiliate</a></li>
-                    <li class="item-list-a"><i class="bi bi-chevron-right"></i> <a href="#">Privacy Policy</a></li>
-                  </ul>
-                </div>
-              </div>
-            </div>
-          </div>
-          <div class="col-sm-12 col-md-4 section-md-t3">
-            <div class="widget-a">
-              <div class="w-header-a">
-                <h3 class="w-title-a text-brand">International sites</h3>
-              </div>
-              <div class="w-body-a">
-                <ul class="list-unstyled">
-                  <li class="item-list-a"><i class="bi bi-chevron-right"></i> <a href="#">Venezuela</a></li>
-                  <li class="item-list-a"><i class="bi bi-chevron-right"></i> <a href="#">China</a></li>
-                  <li class="item-list-a"><i class="bi bi-chevron-right"></i> <a href="#">Hong Kong</a></li>
-                  <li class="item-list-a"><i class="bi bi-chevron-right"></i> <a href="#">Argentina</a></li>
-                  <li class="item-list-a"><i class="bi bi-chevron-right"></i> <a href="#">Singapore</a></li>
-                  <li class="item-list-a"><i class="bi bi-chevron-right"></i> <a href="#">Philippines</a></li>
-                </ul>
-              </div>
-            </div>
-          </div>
+         
+          
         </div>
       </div>
     </section>
@@ -456,15 +439,11 @@
                 <li class="list-inline-item">
                   <a href="#">Home</a>
                 </li>
-                <li class="list-inline-item">
-                  <a href="#">About</a>
-                </li>
+           
                 <li class="list-inline-item">
                   <a href="#">Property</a>
                 </li>
-                <li class="list-inline-item">
-                  <a href="#">Blog</a>
-                </li>
+               
                 <li class="list-inline-item">
                   <a href="#">Contact</a>
                 </li>
@@ -497,17 +476,9 @@
             <div class="copyright-footer">
               <p class="copyright color-text-a">
                 &copy; Copyright
-                <span class="color-a">EstateAgency</span> All Rights Reserved.
+                <span class="color-a">VirtualProperty</span> All Rights Reserved.
               </p>
             </div>
-            <div class="credits">
-              <!--
-            All the links in the footer should remain intact.
-            You can delete the links only if you purchased the pro version.
-            Licensing information: https://bootstrapmade.com/license/
-            Purchase the pro version with working PHP/AJAX contact form: https://bootstrapmade.com/buy/?theme=EstateAgency
-          -->
-              Designed by <a href="https://bootstrapmade.com/">BootstrapMade</a>
             </div>
           </div>
         </div>
