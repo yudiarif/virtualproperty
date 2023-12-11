@@ -9,6 +9,15 @@
 /*--------------------------------------------------------------
 # General
 --------------------------------------------------------------*/
+@font-face {
+  font-family: "Poppins";
+  src: url("/assets/font/poppins.ttf") format("ttf");
+}
+@font-face {
+  font-family: "DM Serif Display";
+  src: url("/assets/font/dm.ttf") format("ttf");
+}
+
 body {
   font-family: "Poppins", sans-serif;
   color: #555555;
@@ -155,7 +164,7 @@ a:hover {
   color: #000000;
   font-size: 2rem;
   font-weight: 600;
-  font-family: "DM Serif Display", serif;
+  font-family: "DM Serif Displa", serif;
 }
 
 @media (max-width: 767px) {
